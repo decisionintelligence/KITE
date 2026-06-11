@@ -1,0 +1,117 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments and local package state
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# IDE and editor state
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Runtime logs and process artifacts
+*.log
+*.out
+*.err
+*.pid
+nohup.out
+tmux-*.log
+
+# Benchmark outputs and generated reports
+result/
+results/
+checkpoints/
+checkpoint/
+*.ckpt
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.csv.tar.gz
+*.tar.gz
+
+# Sweep queues, claims, worker status, and generated experiment scaffolding
+sweeps/
+test_10.24/
+ff_sweep*/
+*_sweep*/
+
+# One-off sweep/search helper scripts generated during experiments.
+scripts/append_*.py
+scripts/build_p*.py
+scripts/kite_sweep_worker.py
+scripts/launch_p*.sh
+scripts/update_unknown_future*_kite_csv.py
+scripts/verify_kite_repro.py
+scripts/verify_kite_repro.sh
+
+# Temporary local scripts and scratch files
+script.sh
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+*.orig
+*.rej
+
+# Generated backup snapshots from table/script updates
+*.bak_update_*
+*.backup_*
+.backup*/
+**/.backup*/
+**/.backup_*/
+**/.backup_*/*
+
+# Result tables and transient selection/debug CSVs are local experiment output.
+known_future_covariates_*.csv
+unknown_future_covariates_*.csv
+unknown_future_kite_*selection.csv
+unknown_future_*selection.csv
+scripts/wo_future/KITE_selected_unknown_future_configs.csv
+
+# Keep curated runnable shell scripts under scripts/.
+!scripts/
+scripts/*.py
+scripts/*.sh
+!scripts/__init__.py
+!scripts/run_benchmark.py
+!scripts/w_future/
+!scripts/w_future/*.sh
+scripts/w_future/repro_gpu257_fast/
+!scripts/wo_future/
+!scripts/wo_future/*.sh
+
+# Local datasets are not included in this GitHub push.
+dataset/
+
+# Source archives duplicated by extracted baseline directories.
+ts_benchmark/baselines/*.zip
+
+# Environment files can contain machine-specific paths or credentials.
+.env
+.env.*
+!.env.example
