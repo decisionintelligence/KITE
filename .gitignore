@@ -26,6 +26,10 @@ pip-wheel-metadata/
 *.swo
 *~
 
+# Local agent/editor instructions
+AGENTS.md
+CLAUDE.md
+
 # OS metadata
 .DS_Store
 Thumbs.db
